@@ -1,0 +1,15 @@
+---
+IrresponsibleModule:
+  enabled: false
+
+FeatureEnvy:
+ enabled: false
+
+TooManyStatements:
+  enabled: true
+  exclude:
+  - initialize
+  - change
+  - up
+  - down
+  max_statements: 5
