@@ -9,7 +9,11 @@ TooManyStatements:
   enabled: true
   exclude:
   - initialize
-  - change
-  - up
-  - down
   max_statements: 5
+
+"db/migrate":
+  TooManyStatements:
+    enabled: false
+
+  UncommunicativeVariableName:
+    enabled: false
