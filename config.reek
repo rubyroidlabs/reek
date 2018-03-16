@@ -12,6 +12,7 @@ TooManyStatements:
   enabled: true
   exclude:
   - initialize
+  - perform
   - change
   - up
   - down
