@@ -16,3 +16,7 @@ TooManyStatements:
   - up
   - down
   max_statements: 5
+
+"app/workers":
+  UtilityFunction:
+    enabled: false
