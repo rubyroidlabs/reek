@@ -21,3 +21,7 @@ TooManyStatements:
 "app/workers":
   UtilityFunction:
     enabled: false
+
+"db/migrate":
+  UtilityFunction:
+    enabled: false
