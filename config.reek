@@ -1,12 +1,12 @@
 ---
-IrresponsibleModule:
-  enabled: false
-
 DuplicateMethodCall:
   max_calls: 3
 
 FeatureEnvy:
- enabled: false
+  enabled: false
+
+IrresponsibleModule:
+  enabled: false
 
 TooManyStatements:
   enabled: true
