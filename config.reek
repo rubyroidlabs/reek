@@ -1,4 +1,7 @@
 ---
+Attribute:
+  enabled: false
+
 DuplicateMethodCall:
   max_calls: 3
 
