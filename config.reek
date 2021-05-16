@@ -1,39 +1,26 @@
 ---
-Attribute:
-  enabled: false
+  detectors:
+    IrresponsibleModule:
+      enabled: false
 
-DuplicateMethodCall:
-  max_calls: 3
+    FeatureEnvy:
+      enabled: false
 
-FeatureEnvy:
-  enabled: false
+    DuplicateMethodCall:
+      max_calls: 3
 
-IrresponsibleModule:
-  enabled: false
+    Attribute:
+      enabled: false
 
-PrimaDonnaMethod:
-  enabled: false
+    TooManyStatements:
+      enabled: true
+      exclude:
+      - initialize
+      - perform
+      - change
+      - up
+      - down
+      max_statements: 5
 
-TooManyStatements:
-  enabled: true
-  exclude:
-  - initialize
-  - perform
-  - change
-  - up
-  - down
-  max_statements: 5
-
-"app/workers":
-  UtilityFunction:
-    enabled: false
-
-"db/migrate":
-  DuplicateMethodCall:
-    enabled: false
-  NestedIterators:
-    enabled: false
-  UncommunicativeVariableName:
-    enabled: false
-  UtilityFunction:
-    enabled: false
+  exclude_paths:
+    - 'db/**/*'
